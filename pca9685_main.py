@@ -7,9 +7,9 @@ bus = smbus.SMBus(1)
 
 def PCA9685_Init():
     mode1_mask = 0x00 | PCA9685_MODE1_BITM_AI | PCA9685_MODE1_BITM_SLEEP | PCA9685_MODE1_BITM_ALLCALL
-    print(PCA9685_I2C_ADDRESS)
-    print(PCA9685_MODE1_REG)
-    print(type(mode1_mask))
+    #print(PCA9685_I2C_ADDRESS)
+    #print(PCA9685_MODE1_REG)
+    #print(type(mode1_mask))
     
     #data = bus.read_i2c_block_data(0x70, 0x06, 1)
     #print(data)
